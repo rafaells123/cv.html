@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>teste</title>
+</head>
+<body>
+
+<div 
+style="background-color:green ; border-radius:4; padding:20px 90px; margin: 80px;font-size:30px ;box-shadow:5px 5px black; width: 80px;font-family: verdana;color:white">
+
+Botão
+</div>
+
+
+</body>
+</html>
