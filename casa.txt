@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Casa</title>
+</head>
+<body>
+
+<div style="margin-top:100px; margin-left: 250px">
+<svg height="160" width="170" style=margin-left:-3px;>
+  <polygon points="80,0 0,160 170,170"/>
+  </svg>
+<div style="border:5px solid; width:150px; height:150px; margin-top:-4px; background-color:brown; "><!--parede--></div>
+<div style="margin:-80px 0 0 5px; border:1px solid; width:40px; height:70px;  background-color:white;"><!--porta--></div>
+
+
+</div>
+
+
+
+<hr style="margin-left:-250px; margin-top:0px; width:90%;border:5px solid;">
+
+</body>
+</html>
