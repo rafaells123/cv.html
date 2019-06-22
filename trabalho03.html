@@ -1,129 +1,1146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+ <meta charset="utf-8">
+  <title>Munter - Bootstrap One Page Template</title>
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  		<meta http-equiv="Content-Language" content="pt-br">
+		<meta name="author" content="Hakim El Hattab">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+ 		<link rel="stylesheet" href="lib/css/zenburn.css">
+  		<link rel="stylesheet" href="css/munter.css">
+  		<link rel="stylesheet" href="css/slides.css">		
+ 	 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+ 		<meta content="" name="keywords">
+ 	    <meta content="" name="description">
+  	    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	    <link href="img/favicon.png" rel="icon">
+  		<link href="img/apple-touch-icon.png" rel="apple-touch-icon"> 
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+       <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+       <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+       <link href="lib/fancybox/fancybox.css" rel="stylesheet">
+
+       <link href="css/style.css" rel="stylesheet">
+       <link rel="prefetch" href="img/zoom.png">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        
+	
+   
+		</script>
 
 	
+<style>
+.font-thin {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+}
+
+.font-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+.font-light {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+}
+
+* {
+  position: relative;
+}
+
+.breaker {
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 1px;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: normal;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+#navbar {
+  
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 10px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 10px;
+  border-radius: 4px;
+  
+}
+
+#navbar  {  
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.4s;
+  float:left;
+}
+
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #process .content-row h2 {
+    min-height: 6em;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: rgba( 0, 0, 0, .8);
+  }
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+.slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 65px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#intro {
+  background-image: url('https://imgur.com/2h9Q79D.jpg');
+  color: #ffffff;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  background-attachment: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#intro h1 {
+  padding-top: 130px;
+  background-image:none; 
+  
+}
+
+@media (max-width: 991px) {
+  #intro {
+    background-position: -70% 0, 170% 0;    
+     }
+}
+
+@media (max-width: 767px) {
+  #intro {
+    background-image:none;
+  }
+}
+
+#home-row-1, #home-row-2 {
+  padding-top: 25px;
+}
+
+#home-row-1 h1 {
+  font-size: 54px;
+}
+
+#home-row-1 h4 {
+  font-size: 32px;
+}
+
+#home-row-2 {
+  font-size: 25px;
+}
+
+#home-row-2 .col-12 {
+  height: 232px;
+  padding-top: 30px;
+}
+
+#home-row-2 .col-12 .home-hover {
+  height: 166px;
+  overflow: hidden;
+  padding-top: 26px;
+  transition: all ease-in .5s;
+}
+
+#home-row-2 .col-12 .home-hover:hover {
+  height: 166px;
+  padding-top: 0;
+}
+
+@media (max-width: 767px) {
+  #home-row-1, #home-row-2 {
+    padding-top: 16px;
+  }
+  #home-row-1 h1 {
+    font-size: 35px;
+  }
+  #home-row-1 h4 {
+    font-size: 21px;
+  }
+  #home-row-2 {
+    font-size: 16px;
+  }
+}
+
+#about-us {
+  background-color: #1abc9c;
+  color: #e4e6e5;
+  padding-top: 90px;
+}
+
+.title-row {
+  font-size: 45px;
+  padding-bottom: 50px;
+}
+
+.line-row .hr {
+  background-color: #e4e6e5;
+  height: 5px;
+  margin: 0 auto;
+  width: 33%;
+}
+
+.subtitle-row {
+  font-size: 35px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.content-row {
+  padding-top: 45px;
+}
+
+.content-row i, #about-row-5 i {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+  font-size: 48px;
+}
+
+.content-row h2 {
+  font-size: 28px;
+  padding-bottom: 40px;
+}
+
+.content-row h4 {
+  font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+i {
+  font-size: 80px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .title-row {
+    font-size: 34px;
+    padding-bottom: 33px;
+  }
+  .subtitle-row {
+    font-size: 26px;
+    padding-bottom: 26px;
+    padding-top: 26px;
+  }
+  .content-row {
+    padding-top: 29px;
+  }
+  .content-row h2 {
+    font-size: 24px;
+    padding-bottom: 26px;
+  }
+  .content-row h4 {
+    font-size: 20px;
+  }
+}
+
+#portfolio {
+  background-color: white;
+  margin: 20px;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+
+
+#process {
+  background-color: #34495e;
+  color: #e4e6e5;
+  padding-top: 90px;
+}
+
+#process i {
+  font-size: 80px;
+  color: white;
+}
+
+#clients {
+  background-color: #f39c12;
+  color: #e4e6e5;
+  padding-top: 90px;
+}
+
+#contact {
+  background-color: #2f2f2f;
+  color: #e4e6e5;
+  padding-bottom: 50px;
+  padding-top: 90px;
+}
+
+#contact i {
+  font-size: 32px;
+}
+
+@media (max-width: 767px) {
+  #contact {
+    background-image: none;
+  }
+}
+
+#contact .line-row .hr {
+  background-color: #4e4e4e;
+  color: #4e4e4e;
+}
+
+#contact a {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .with-hover-text {
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+}
+
+#contact-row-4 {
+  padding-top: 50px;
+}
+
+#contact-row-4 .col-12 {
+  height: 175px;
+  overflow: hidden;
+  padding-top: 20px;
+  transition: all ease-in .5s;
+}
+
+#contact-row-4 img {
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#contact-row-4 .col-12:hover {
+  height: 175px;
+  padding-top: 0;
+}
+
+#contact-row-4 .col-12 .hover-text {
+  display: none;
+  font-size: 20px;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+  text-align: left;
+}
+
+.contact-form label {
+   color: #fff;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px 12px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  height: auto;
+}
+
+.contact-form .form-send {
+  text-align: center;
+}
+
+.contact-form .form-send button  {
+  background: #1abc9c;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.contact-form .form-send button:hover {
+  background: #13dfb7;
+}
+
+.contact-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact-form .loading {
+  display: none;
+  color: #555;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.contact-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.contact-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.contact-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+#slide-7 {
+  background-color: #e4e6e5;
+  color: #4e4e4e;
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+}
+
+#lightbox-out {
+  background-color: rgba( 0, 0, 0, 0.7);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+}
+
+.with-hover-text span {
+  display: none;
+}
+
+.zoom {
+  background-image: url('../img/zoom.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#arrows {
+  bottom: 10%;
+  height: 80px;
+  position: fixed;
+  right: 10%;
+  width: 80px;
+  z-index: 1000;
+}
+
+#arrows div {
+  background-image: url('../img/website-arrows.png');
+  cursor: pointer;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+#arrows div.disabled {
+  cursor: default;
+}
+
+#arrow-up {
+  background-position: 30px 0;
+  left: 25px;
+  top: 0;
+}
+
+#arrow-up.disabled {
+  background-position: 0 0;
+}
+
+#arrow-down {
+  background-position: 30px -30px;
+  left: 25px;
+  bottom: 0;
+}
+
+#arrow-down.disabled {
+  background-position: 0 -30px;
+}
+
+#arrow-left {
+  background-position: 30px -60px;
+  left: 0;
+  top: 25px;
+}
+
+#arrow-left.disabled {
+  background-position: 0 -60px;
+}
+
+#arrow-right {
+  background-position: 30px -90px;
+  right: 0;
+  top: 25px;
+}
+
+#arrow-right.disabled {
+  background-position: 0 -90px;
+}
+
+.navigation-slide {
+  cursor: pointer;
+  text-align: center;
+}
+
+.navigation-slide-a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+/* Copyrights */
+
+#copyrights {
+  background: #222222;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+}
+
+#copyrights p {
+  margin-bottom: 5px;
+}
+
+#copyrights a {
+  color: #1abc9c;
+}
+.credits {
+  color: #999;
+}
+
+
+
+.row {
+  margin: 8px 26px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+ 
+ 
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  opacity:0.5;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index:999;
+}
+
+.content:hover{
+	transform: scale(2);
+    opacity:1;  
+    z-index:99999;
+    
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: auto) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: auto) {
+  .column {
+    width: 100%;
+  }
+}
+
+</style>
+
+
+
+
 </head>
 
-<nav class="navbar fixed-top navbar-light bg-light">
-	<a class="navbar-brand" href="#">
-    <img src="https://imgur.com/pO3gJk6.jpg" width="120" height="50" class="d-inline-block align-top" alt="">
-    
-  </a>
-  <a class="navbar-brand" href="#">Sorria Click Servi√ßos Fotogr√°ficos</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#carouselExampleInterval2">Galeria</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#carouselExampleInterval3">Nossos Servi√ßos</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#carouselExampleInterval4">Sobre n√≥s</a>
-      </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Contato</a>
-      </li>
+<body>
+
+
+<div id="navbar">
+  <a href="#default" id="logo"></a>
+	 <img src="https://imgur.com/U8SDmfX.jpg" alt="Tigor Mountain" style="width:70px" "height:auto">
+  <div id="navbar-right">  	
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    	  
+  </div>
+</div>
+
+
+  <!-- === MAIN Background === -->
+  <div class="slide story" id="intro" data-slide="1">
+ 
+    <div class="container">
+      <div id="home-row-1" class="row clearfix">
+      
+        <div class="col-12">
+          <h1 class="font-semibold">Sorria Click <span class="font-thin">ServiÁos Fotogr·ficos</span></h1>
+          <h4 class="font-thin">Toda <span class="font-semibold">emoÁ„o</span> mereÁe um registro!</h4>
+          <br>
+          <br>
         </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+        <!-- /col-12 -->
+      </div>
+      <!-- /row -->
+      <div id="home-row-2" class="row clearfix">
 
-<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="10000">
-      <img src="https://imgur.com/GBMlAZA.jpg" class="d-block w-100" alt="...">
+        <div class="col-12 col-sm-4">
+          <a href="#portfolio" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="img/s02.png"></div><span>PROFESSIONAL</span></a>
+          
+        </div>
+
+        <div class="col-12 col-sm-4">
+          <a href="#process" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="img/s01.png"></div><span>FRIENDLY</span></a>
+        </div>
+
+        <div class="col-12 col-sm-4">
+          <a href="#clients" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="img/s03.png"></div><span>SUITABLE</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- /row -->
     </div>
-    <div class="carousel-item" data-interval="2000">
-      <img src="https://imgur.com/GBMlAZA.jpg" class="d-block w-100" alt="...">
+    <!-- /container -->
+  </div>
+  <!-- /slide1 -->
+
+  <!-- === Slide 2 === -->
+  <div class="slide story" id="about-us" data-slide="2">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">Contrary to popular belief, <span class="font-semibold">Lorem Ipsum</span> <br>is not simply random text.</div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-12 font-thin">This is what <span class="font-semibold">we do best</span></div>
+      </div>
+      <!-- /row -->
+      <div class="row content-row">
+        <div class="col-12 col-lg-3 col-sm-6">
+          <p><i class="fa fa-eye"></i></p>
+          <h2 class="font-thin">Visual <span class="font-semibold">Identity</span></h2>
+          <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-lg-3 col-sm-6">
+          <p><i class="fa fa-laptop"></i></p>
+          <h2 class="font-thin">Web <span class="font-semibold">Design</span></h2>
+          <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-lg-3 col-sm-6">
+          <p><i class="fa fa-tablet"></i></p>
+          <h2 class="font-thin">Mobile <span class="font-semibold">Apps</span></h2>
+          <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-lg-3 col-sm-6">
+          <p><i class="fa fa-pencil"></i></p>
+          <h2 class="font-semibold">Development</h2>
+          <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+        </div>
+        <!-- /col12 -->
+      </div>
+      <!-- /row -->
     </div>
-    <div class="carousel-item">
-      <img src="https://imgur.com/GBMlAZA.jpg" class="d-block w-100" alt="...">
+    <!-- /container -->
+  </div>
+  <!-- /slide2 -->
+
+  <!-- === SLide 3 - Portfolio -->
+<div class="row" id="portifolio">
+  <div class="column">
+    <div class="content">
+      <img src="https://imgur.com/GcApNZW.jpg" alt="Tigor Mountain" style="width:100%">     
+      
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button1" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<div id="carouselExampleInterval2" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="10000">
-      <img src="https://imgur.com/GBMlAZA.jpg" class="d-block w-100" alt="...">
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/7StQq8u.jpg" alt="Tigor Mountain" style="width:100%">
     </div>
-    <div class="carousel-item" data-interval="2000">
-      <img src="https://imgur.com/GBMlAZA.jpg" class="d-block w-100" alt="...">
+      </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/xoAZo8j.jpg" alt="Star Mountain" style="width:100%">
+     
     </div>
-    <div class="carousel-item">
-      <img src="https://imgur.com/GBMlAZA.jpg" class="d-block w-100" alt="...">
+      </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/T4lBdAP.jpg" alt="Star Mountain" style="width:100%">
+     
+    </div>
+      </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/VQybQs9.jpg" alt="Fire Whip" style="width:100%">
+     
+    </div>
+      </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/GBMlAZA.jpg" alt="Fire Whip" style="width:100%">     
+    </div>
+      </div>
+      
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/0GYiuaD.jpg" alt="HÌpica" style="width:100%">        
+    </div>
+    
+      </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/zHhZ9Ta.jpg" alt="HÌpica" style="width:100%">
+     
+    </div>
+     </div>
+     
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/CAefAVt.jpg" alt="Madagascar" style="width:100%">
+     
+    </div>
+     </div>
+     
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/VKuGmUN.jpg" alt="Madagascar" style="width:100%">
+     
+    </div>
+     </div>
+     
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/OgkZUvV.jpg" alt="Fort ¡lamo" style="width:100%">   
+    
+    </div>  
+      </div>
+      
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/aq1y0kO.jpg" alt="Fort ¡lamo" style="width:100%">
+     </div>
+     </div>
+         
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/xLFv36W.jpg" alt="Tchibum" style="width:100%">
+     
+    </div>
+    </div>
+    
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/Cn86Spf.jpg" alt="Tchibum" style="width:100%">
+     
+    </div>
+    </div>
+    
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/wAUWcGh.jpg" alt="Raskapuska" style="width:100%">
+     
+    </div>
+    </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://imgur.com/QBBU5bH.jpg" alt="Raskapuska" style="width:100%">
+     </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleInterval2" role="button1" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleInterval2" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+  
+  
 
-<div id="carouselExampleInterval3" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="10000">
-      <img src="https://imgur.com/HuleqIf.jpg" class="d-block w-100" alt="...">
+
+  <!-- === Slide 4 - Process === -->
+  <div class="slide story" id="process" data-slide="4">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin">See us <span class="font-semibold">at work</span></div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-10 font-light">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div class="row content-row">
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-2">
+          <p><i class="fa fa-bolt"></i></p>
+          <h2 class="font-thin">Listening to<br><span class="font-semibold" >your needs</span></h2>
+          <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2">
+          <p><i class="fa fa-cog"></i></p>
+          <h2 class="font-thin">Project<br><span class="font-semibold">discovery</span></h2>
+          <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2">
+          <p><i class="fa fa-cloud"></i></p>
+          <h2 class="font-thin">Storming<br><span class="font-semibold">our brains</span></h2>
+          <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2">
+          <p><i class="fa fa-map-marker"></i></p>
+          <h2 class="font-thin">Getting<br><span class="font-semibold">there</span></h2>
+          <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2">
+          <p><i class="fa fa-gift"></i></p>
+          <h2 class="font-thin">Delivering<br><span class="font-semibold">the product</span></h2>
+          <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
+        </div>
+        <!-- /col12 -->
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+      </div>
+      <!-- /row -->
     </div>
-    <div class="carousel-item" data-interval="2000">
-      <img src="https://imgur.com/Dj4FoAF.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://imgur.com/k1P5KIf.jpg" class="d-block w-100" alt="...">
-    </div>
+    <!-- /container -->
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleInterval3" role="button1" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleInterval3" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+  <!-- /slide4 -->
 
-<div id="carouselExampleInterval4" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="10000">
-      <img src="https://imgur.com/pOMkXWf.jpg" class="d-block w-100" alt="...">
+  <!-- === Slide 5 === -->
+  <div class="slide story" id="clients" data-slide="5">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-thin"><span class="font-semibold">Clients</span> weíve worked with</div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-10 font-light">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br/><br/> The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+          below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero.</div>
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div class="row content-row">
+        <div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-2"><img src="img/client01.png" alt=""></div>
+        <div class="col-12 col-sm-2"><img src="img/client02.png" alt=""></div>
+        <div class="col-12 col-sm-2"><img src="img/client03.png" alt=""></div>
+        <div class="col-12 col-sm-2"><img src="img/client04.png" alt=""></div>
+        <div class="col-12 col-sm-2"><img src="img/client05.png" alt=""></div>
+        <div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
+      </div>
+      <!-- /row -->
     </div>
+    <!-- /container -->
+  </div>
+  <!-- /slide5 -->
+
+  <!-- === Slide 6 / Contact === -->
+  <div class="slide story" id="contact" data-slide="6">
+    <div class="container">
+      <div class="row title-row">
+        <div class="col-12 font-light">Leave us a <span class="font-semibold">message</span></div>
+      </div>
+      <!-- /row -->
+      <div class="row line-row">
+        <div class="hr">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div class="row subtitle-row">
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-10 font-light">You can find us literally anywhere, just push a button and weíre there</div>
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+      </div>
+      <!-- /row -->
+      <div id="contact-row-4" class="row">
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+        <div class="col-12 col-sm-2 with-hover-text">
+          <p><a target="_blank" href="#"><i class="fa fa-phone"></i></a></p>
+          <span class="hover-text font-light ">+44 4839-4343</span></a>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2 with-hover-text">
+          <p><a target="_blank" href="#"><i class="fa fa-envelope"></i></a></p>
+          <span class="hover-text font-light ">munter@example.com</span></a>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2 with-hover-text">
+          <p><a target="_blank" href="#"><i class="fa fa-home"></i></a></p>
+          <span class="hover-text font-light ">London, England<br>zip code 98443</span></a>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2 with-hover-text">
+          <p><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></p>
+          <span class="hover-text font-light ">facebook/TemplateMag</span></a>
+        </div>
+        <!-- /col12 -->
+        <div class="col-12 col-sm-2 with-hover-text">
+          <p><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></p>
+          <span class="hover-text font-light ">@TemplateMag</span></a>
+        </div>
+        <!-- /col12 -->
+        <div class="col-sm-1 hidden-sm">&nbsp;</div>
+      </div>
+      <!-- /row -->
+
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+
+          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Your Email</label>
+              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+              <div class="validate"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+              <div class="validate"></div>
+            </div>
+
+            <div class="loading"></div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+
+            <div class="form-send">
+              <button type="submit" class="btn btn-large">Send Message</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>Munter</strong>. All Rights Reserved
+      </p>
+      <div class="credits">oxalato de escitalopram
    
+        Created with Munter template by <a href="https://templatemag.com/">TemplateMag</a>
+      </div>
+    </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleInterval4" role="button1" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleInterval4" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+   <script>
+   
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 30) {
+    document.getElementById("navbar").style.padding = "20px 10px";
+    document.getElementById("logo").style.fontSize = "25px";document.getElementById("navbar").setAttribute("style","opacity:0.5; -moz-opacity:0.9; filter:alpha(opacity=90)");
+  } else {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";document.getElementById("navbar").setAttribute("style","opacity:1; -moz-opacity:1; filter:alpha(opacity=100)");
+  }
+}    
+    
+    
+</script>
+	
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/fancybox/fancybox.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
 </body>
 </html>
